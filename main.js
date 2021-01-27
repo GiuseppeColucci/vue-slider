@@ -21,9 +21,9 @@ new Vue({
 
         ],
         
+        sliderGo:0,
     },
     // variabile contatore per lo slider
-    sliderGo:0,
     methods:{
 
         prev:function(){
