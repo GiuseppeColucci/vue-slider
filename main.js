@@ -20,17 +20,20 @@ new Vue({
       
 
         ],
-        
+        iconsBols:[
+            "fas fa-circle",
+            // "fas fa-circle",
+            // "fas fa-circle",
+            // "fas fa-circle",
+        ],
+        bollsP:0,
         sliderGo:0,
     },
     // variabile contatore per lo slider
     methods:{
 
         prev:function(){
-            // this.sliderGo-=1
-            // if(this.sliderGo===sliderGo[4]){
-            //     return sliderGo[4]
-            // }
+          
             if(this.sliderGo==0){
                 this.sliderGo = 4
             } 
