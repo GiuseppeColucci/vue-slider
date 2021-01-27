@@ -27,14 +27,28 @@ new Vue({
     methods:{
 
         prev:function(){
+            // this.sliderGo-=1
+            // if(this.sliderGo===sliderGo[4]){
+            //     return sliderGo[4]
+            // }
+            if(this.sliderGo==0){
+                this.sliderGo = 4
+            } 
+            else {
             this.sliderGo-=1
-            if(this.sliderGo>=4){
-                return sliderGo[4]
             }
-        },
+        }
+        ,
 
         next:function(){
-            this.sliderGo+=1
+            if(this.sliderGo==4){
+                this.sliderGo = 0
+            } 
+            else{
+                this.sliderGo+=1
+                
+            }
+            
         }
     }
 
