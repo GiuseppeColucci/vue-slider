@@ -21,14 +21,9 @@
                     <i @click="next"class="fas fa-angle-right"></i>
                 </div>
                 <div class="nav">
-                    <i :class="iconsBols[bollsP]"></i>
-                    <i :class="iconsBols[bollsP]"></i>
-                    <i :class="iconsBols[bollsP]"></i>
-                    <i :class="iconsBols[bollsP]"></i>
-
-                    <!-- <i class="fas fa-circle active first"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
+                    <!-- <i class="fas fa-circle active first"></i> -->
+                    <i :class="active(i)" v-for="(img,i) in images.length" @click=changePic(i)></i>
+                    <!-- <i class="fas fa-circle"></i>
                     <i class="fas fa-circle last"></i> -->
                 </div>
             </div>
