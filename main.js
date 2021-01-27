@@ -28,6 +28,9 @@ new Vue({
 
         prev:function(){
             this.sliderGo-=1
+            if(this.sliderGo>=4){
+                return sliderGo[4]
+            }
         },
 
         next:function(){
